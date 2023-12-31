@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #d6e1ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#img_desktop {
+  display: none;
+}
+.content_box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  width: 327px;
+}
+h1 {
+  color: #1f2e55;
+  font-size: 22px;
+  font-weight: 900;
+}
+#intro_para {
+  color: #717fa6;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 16px;
+  min-width: 263px;
+  width: 95%;
+}
+.music_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-top: 24px;
+  border-radius: 11px;
+  background: #f7f9ff;
+  min-width: 279px;
+}
+.music_box_img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.music_box_text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 3px;
+}
+#plan_para {
+  color: #1f2e55;
+  font-weight: 900;
+}
+#plan_price {
+  color: #717fa6;
+  font-weight: 500;
+}
+#change_para {
+  color: #382ae1;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+#change_para:hover {
+  color: #766cf1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+button {
+  margin-top: 24px;
+  font-family: inherit;
+  min-width: 279px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  border-radius: 11px;
+  background: #382ae1;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #766cf1;
+  transition: 0.3s;
+}
+a {
+  margin-top: 24px;
+  color: #717fa6;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+}
+a:hover {
+  color: #1f2e55;
+  transition: 0.3s;
+}
+@media only screen and (min-width: 1440px) {
+  #img_mobile {
+    display: none;
+  }
+  #img_desktop {
+    display: block;
+  }
+  .content_box {
+    width: 450px;
+    padding: 45px 48px 48px 48px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  #intro_para {
+    line-height: 26px;
+  }
+  .music_box {
+    min-width: 354px;
+    padding: 25px 24px;
+    margin-top: 20px;
+  }
+  .music_box_text {
+    font-size: 16px;
+  }
+  #change_para {
+    font-size: 14px;
+  }
+  button {
+    min-width: 354px;
+    margin-top: 32px;
+  }
+  a {
+    margin-top: 32px;
+  }
+}
