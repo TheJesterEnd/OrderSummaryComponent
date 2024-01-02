@@ -5,7 +5,9 @@
 }
 body {
   font-family: "Red Hat Display", sans-serif;
-  background: #d6e1ff;
+  background-image: url("images/background_mobile.png");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +116,9 @@ a:hover {
   transition: 0.3s;
 }
 @media only screen and (min-width: 1440px) {
+  body {
+    background-image: url("images/background.png");
+  }
   #img_mobile {
     display: none;
   }
